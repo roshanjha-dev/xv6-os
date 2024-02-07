@@ -89,3 +89,12 @@ sys_uptime(void)
   release(&tickslock);
   return xticks;
 }
+
+
+//my code
+int 
+sys_procstate(void)
+{
+  procdump();
+  return 0;
+}
